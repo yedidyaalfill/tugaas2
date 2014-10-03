@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+
+{
+
+int pil;
+
+float a, b, c;
+
+printf("===PROGRAM KAKULATOR SEDERHANA===\n\n");
+printf("MASUKAN BILANGAN PERTAMA:"); scanf("%f",&a);
+printf("MASUKAN BILANGAN KEDUA:"); scanf("%f",&b);
+printf("\n\n>>>MENU PILIHAN<<<\n\n");
+printf("1.PENJUMLAHAN\n");
+printf("2.PENGURANGAN\n");
+printf("3.PERKALIAN\n");
+printf("4.PEMBAGIAN\n");
+printf("===OPERASI APA YANG ANDA INGINKAN(1-4)?;\n\n"); scanf("%d",&pil);
+
+printf(">>>HASIL<<<\n\n");
+
+switch(pil)
+
+{
+
+case 1:c=a+b;printf("%f+%f=%f",a,b,c);break;
+case 2:c=a-b;printf("%f-%f=%f",a,b,c);break;
+case 3:c=a*b;printf("%f*%f=%f",a,b,c);break;
+case 4:c=a/b;printf("%f/%f=%f",a,b,c);break;
+
+default:printf("\n>>>OPERASI YANG ANDA MASUKAN TIDAK ADA PADA MENU<<<");
+
+}
+
+getch();
+
+}
